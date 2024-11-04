@@ -1,0 +1,124 @@
+body{
+    background-color:white;
+    margin: 0;
+    padding: 0;
+    font-family:'TT Lakes', sans-serif;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    box-shadow: 16px 0 52px #0E185033;
+    min-height: 100vh;
+}
+.menu__header{
+    display:flex;
+    width: 100%;
+    padding-top:20px;
+    column-gap:10px;
+}
+button{
+    width:40px;
+    height: 40px;
+    border-radius: 20px;
+    border:0;
+    background-color:#FF3E79 ;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 0.5s;
+}
+@media(hover: hover){
+button:hover{
+    transform: scale(1.2);
+}
+}
+button:active{
+    transform: scale(0.5);
+    opacity: 0.5;
+}
+.menu__cancel-button{
+    margin-left:20px;
+    align-self:end ;
+}
+.menu__cancel-button-action{
+    background-image: url(ic/cancel.svg);
+}
+.menu__search-button{
+    margin-left:auto;
+    margin-right:20px;
+    align-self:end;
+}
+.menu__search-button-action{
+    background-image: url(ic/search.svg);
+}
+.menu__logo{
+    margin-left:10px;
+    width: 97px;
+    height: 51px;
+    background-image: url(ic/Group.svg);
+}
+.menu__navigation{
+    position: relative;
+    padding-left:20px;
+    padding-top:20px;
+}
+a {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color:#1B1C21 ;
+}
+.menu__link{
+    padding-bottom: 30px;
+}
+.menu__link--active::before{
+    content: "";
+    background-color: #41F6D7;
+    width:4px;
+    height: 32px;
+    position:absolute;
+    left:0;
+    top:15px;
+    border-radius: 6px;
+}
+.menu__link .menu__a--active{
+    position: relative;
+    color:#7E7E82;
+}
+a:hover{
+    text-decoration:underline;
+
+}
+.menu__footer{
+    margin-top:auto;
+    margin-left:20px;
+}
+.menu__contact-buttons{
+    display: flex;
+    column-gap: 20px;
+}
+.menu__call-button-action{
+    background-image: url(ic/call.svg);
+}
+.menu__message-button-action{
+    background-image: url(ic/message.svg);
+}
+.menu__profile-button-action{
+    background-image: url(ic/profile.svg);
+}
+.menu__mail{
+    font-weight: 500;
+}
+.menu__phone{
+    font-size: 24px;;
+    font-weight: bold;
+}
+.menu__language{
+    display: flex;
+    column-gap: 10px;
+    padding-bottom: 20px;
+    padding-top:20px;
+}
+.menu__lang-link--active{
+    color:#7E7E82;
+}
